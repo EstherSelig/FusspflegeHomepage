@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musterfirma - Willkommen</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4;}
+    header { background: #222; color: #fff; padding: 20px 0; text-align: center }
+    nav ul { list-style: none; padding: 0; margin: 0; background: #333; display: flex; justify-content: center; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: #fff; text-decoration: none; padding: 14px 10px; display: block;}
+    nav ul li a:hover { background: #222; }
+    .logo { max-width: 140px; margin: 0 auto 12px; display: block; }
+    .container { max-width: 900px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow:0 2px 8px rgba(0,0,0,0.07);}
+    .oeffnungszeiten, .impressum { margin-bottom: 25px; }
+    iframe { width: 100%; max-width: 520px; height: 260px; border: 0; margin-top: 8px;}
+    @media (max-width: 600px) {
+      .container { padding: 15px; }
+      nav ul { flex-direction: column; }
+      nav ul li { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://placehold.co/150x70?text=Logo" alt="Logo" class="logo">
+    <h1>Musterfirma</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#oeffnungszeiten">Öffnungszeiten</a></li>
+      <li><a href="#karte">Standort</a></li>
+      <li><a href="#impressum">Impressum</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <section id="oeffnungszeiten" class="oeffnungszeiten">
+      <h2>Öffnungszeiten</h2>
+      <table>
+        <tr><td>Montag&nbsp;-&nbsp;Freitag:</td><td>09:00 – 18:00 Uhr</td></tr>
+        <tr><td>Samstag:</td><td>10:00 – 14:00 Uhr</td></tr>
+        <tr><td>Sonntag:</td><td>geschlossen</td></tr>
+      </table>
+    </section>
+    <section id="karte">
+      <h2>Standort</h2>
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=9.2765,47.7601,9.2808,47.7620&amp;layer=mapnik"
+        style="border:1px solid #ccc;">
+      </iframe>
+      <br>
+      <a href="https://www.openstreetmap.org/?mlat=47.7610&amp;mlon=9.2786#map=18/47.7610/9.2786" target="_blank">
+        Größere Karte anzeigen
+      </a>
+    </section>
+    <section id="impressum" class="impressum">
+      <h2>Impressum</h2>
+      <p>Musterfirma GmbH<br>
+         Musterstraße 1<br>
+         88682 Salem<br>
+         Telefon: 01234 567890<br>
+         E-Mail: info@musterfirma.de<br>
+         Geschäftsführer: Max Mustermann
+      </p>
+    </section>
+  </div>
+</body>
+</html>
+
