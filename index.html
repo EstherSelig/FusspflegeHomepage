@@ -51,7 +51,7 @@
     }
 
     .logo {
-      width: 25%; 
+      width: 25%;
       height: auto;
       margin: 0 auto 12px;
       display: block;
@@ -78,7 +78,7 @@
       /* 2 Spalten */
       gap: 20px;
       max-width: 800px;
-      margin: 20px auto;
+      margin: 10px auto;
     }
 
     figure {
@@ -87,9 +87,15 @@
       /* zentriert Bild und Untertitel */
     }
 
-    img {
-      /* width: 100%; */
-      /* Bild füllt die Zelle */
+    gridimage {
+      width: 40%;
+      height: auto;
+      border: 1px solid #ccc;
+      display: block;
+    }
+
+    bigimage {
+      width: 80%;
       height: auto;
       border: 1px solid #ccc;
       display: block;
@@ -135,7 +141,7 @@
 
 <body>
   <header>
-    <img src="images/logo.png" alt="Logo" width="500" height="500" class="logo">
+    <img src="images/logo.png" alt="Logo" class=".logo">
     <h1>Fusspflege Fusszeit <br> by Esther Selig</h1>
   </header>
   <nav>
@@ -183,9 +189,9 @@
         <h2>Deine Auswahl</h2>
       </center>
 
-      <<div class="grid-container">
+      <div class="grid-container">
         <figure>
-          <img src="images/Auswahl - BasisFusspflege.jpg" alt="Basis Fußpflege" />
+          <img src="images/Auswahl - BasisFusspflege.jpg" alt="Basis Fußpflege" class="gridimage" />
           <figcaption><b>Basis Fußpflege</b> - 32 Euro<br>Entspanntes Fußbad, Haut- und Nagelpflege (kürzen und
             schleifen),
             Hornhautentfernung, Prüfen des Nagelpfalzes, Fusspflege mit Creme oder Aromaöl<br>
@@ -194,107 +200,112 @@
         </figure>
 
         <figure>
-          <img src="images/Auswahl - ErweiterteFusspflege.jpg" alt="Erweiterte Fußpflege" />
+          <img src="images/Auswahl - ErweiterteFusspflege.jpg" alt="Erweiterte Fußpflege" class="gridimage" />
           <figcaption><b>Erweiterte Fußpflege</b> - 38 Euro<br>Erweiterte Behandlung bei Problemfuß,
             Basispflege + eingewachsene Nägel, Hühneraugen, verdickte Nägel etc.<br>
             Dauer bis zu 45 Minuten</figcaption>
         </figure>
 
         <figure>
-          <img src="images/Auswahl - Fussmassage.jpg" alt="Fussmassage" />
+          <img src="images/Auswahl - Fussmassage.jpg" alt="Fussmassage" class="gridimage" />
           <figcaption><b>Wohlfühl-/Fusszonenmassage</b> - 30 Euro<br>Dauer ca. 25 Minuten</figcaption>
         </figure>
 
         <figure>
-          <img src="images/Auswahl - Lackieren.jpg" alt="Nagellack" />
+          <img src="images/Auswahl - Lackieren.jpg" alt="Nagellack" class="gridimage" />
           <figcaption><b>Nagellack</b><br>4 Euro bei eigenem Nagellack,<br> 6 Euro mit meinem Nagellack</figcaption>
         </figure>
-  </div>
-  <p>Zusätzliche Option: Fussenthaarung - 5 Euro</p>
-
-  </section>
-  <section id="KontaktTermine">
-    <center>
-      <h2>Kontakt</h2>
-    </center>
-    <p>Fusszeit am Bodensee - Esther Selig</p>
-    <p>Walter-Eberhard-Loch-Str. 10</p>
-    <p>88682 Salem</p>
-    <p>Telefon: 0155 60 590081</p>
-    <p>Whatsapp: 0155 60 590081</p>
-    <p>Termine nach Vereinbarung per Whatsapp und Telefon</p>
-    <p> Ich freue mich auf deinen Anruf !</p>
-  </section>
-  <section id="Praxis">
-    <center>
-      <h2>&#128150;-lich willkommen in meiner Praxis</h2>
-    </center>
-  <section id="Praxis">
-    <div class="spalte">
-      <p><center><img src="images/Praxis2025.jpg" alt="Praxis2"></center></p>
-    </div>
-
-  </section>
-  <section id="Übermich" class="Übermich">
-    <center>
-      <h2>Über mich</h2>
-    </center>
-    <div class="zweispaltig">
-      <div class="spalte">
-        <p><b>Hallo,</b><br><br> ich bin Esther Selig, deine professionelle Fachfußpflegerin in Salem am Bodensee. Mit
-          meiner Leidenschaft
-          für gesunde und gepflegte Füße biete ich dir eine umfassende Fußpflege, die auf deine individuellen
-          Bedürfnisse
-          abgestimmt sind.</p>
-        <p> Was macht eine Fachfußpflegerin ? Eine Fachfußpflegerin ist eine qualifizierte Fachkraft, die sich auf die
-          pflegerische
-          und vorbeugende Behandlung spezialisiert hat. Sie arbeitet nicht medizinisch-therapeutisch
-          (das ist den Podologen vorbehalten), sondern sorgt durch Pflege, Hygiene und Beratung dafür, dass Füße
-          gesund bleiben und
-          Fußprobleme gar nicht erst entstehen. </p>
-        <p>Ich unterstütze dich bei der Erhaltung deiner Fussgesundheit und deines Wohlbefindens</p>
-        <p>Ich freue mich auf dich.</p>
-        <p>Deine Esther</p>
       </div>
-      <div class="spalte">
-        <p><img src="images/Esther.jpg" alt="EstherSelig"></p>
-      </div>
-    </div>
-  </section>
-  <section id="karte">
-    <center>
-      <h2>Standort</h2>
-    </center>
-    <iframe
-      src="https://www.openstreetmap.org/export/embed.html?bbox=9.31,47.7606,9.3206,47.7626&amp;layer=mapnik&amp;marker=47.761439,9.316809"
-      style="border:1px solid #ccc;">
-    </iframe>
-    <br>
-    <a href="https://www.openstreetmap.org/?mlat=47.761439&amp;mlon=9.316809#map=17/47.761439/9.316809" target="_blank">
-      Größere Karte anzeigen
-    </a>
-  </section>
-  </br>
-  <section id="impressum" class="impressum">
-    <b>Impressum</b>
-    <p> Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz) und § 18 MStV (Medienstaatsvertrag): <br>
-      Esther Selig<br>
-      Walter-Eberhard-Loch-Str. 10<br>
-      88682 Salem<br>
-      Telefon: 0155 60 590081<br>
-      Inhaberin: Esther Selig<br>
-      Termine immer nur nach Absprache<br>
-      Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
-      Esther Selig, Walter-Eberhard-Loch-Straße 10, 88682 Salem-Neufrach<br>
-    </p>
-    <b>Bildquellen</b><br>
-    <p>Alle auf dieser Internetseiten verwendeten Bildquellen sind urheberrechtlich geschützt und dürfen nicht ohne
-      Zustimmung oder Lizenzrecht anderweitig verwendet werden. Bildquelle extern : freepik<br /><br /></p>
-    </p>
-    <p>
-      <center>(c) 2025 - Fußzeit Bodensee - Esther Selig</center>
-    </p>
-  </section>
+      <p>Zusätzliche Option: Fussenthaarung - 5 Euro</p>
+
+    </section>
+    <section id="KontaktTermine">
+      <center>
+        <h2>Kontakt</h2>
+      </center>
+      <p>Fusszeit am Bodensee - Esther Selig</p>
+      <p>Walter-Eberhard-Loch-Str. 10</p>
+      <p>88682 Salem</p>
+      <p>Telefon: 0155 60 590081</p>
+      <p>Whatsapp: 0155 60 590081</p>
+      <p>Termine nach Vereinbarung per Whatsapp und Telefon</p>
+      <p> Ich freue mich auf deinen Anruf !</p>
+    </section>
+    <section id="Praxis">
+      <center>
+        <h2>&#128150;-lich willkommen in meiner Praxis</h2>
+      </center>
+      <section id="Praxis">
+        <div class="spalte">
+          <p>
+            <center><img src="images/Praxis2025.jpg" alt="Praxis2" class="bigimage"></center>
+          </p>
+        </div>
+
+      </section>
+      <section id="Übermich" class="Übermich">
+        <center>
+          <h2>Über mich</h2>
+        </center>
+        <div class="zweispaltig">
+          <div class="spalte">
+            <p><b>Hallo,</b><br><br> ich bin Esther Selig, deine professionelle Fachfußpflegerin in Salem am Bodensee.
+              Mit
+              meiner Leidenschaft
+              für gesunde und gepflegte Füße biete ich dir eine umfassende Fußpflege, die auf deine individuellen
+              Bedürfnisse
+              abgestimmt sind.</p>
+            <p> Was macht eine Fachfußpflegerin ? Eine Fachfußpflegerin ist eine qualifizierte Fachkraft, die sich auf
+              die
+              pflegerische
+              und vorbeugende Behandlung spezialisiert hat. Sie arbeitet nicht medizinisch-therapeutisch
+              (das ist den Podologen vorbehalten), sondern sorgt durch Pflege, Hygiene und Beratung dafür, dass Füße
+              gesund bleiben und
+              Fußprobleme gar nicht erst entstehen. </p>
+            <p>Ich unterstütze dich bei der Erhaltung deiner Fussgesundheit und deines Wohlbefindens</p>
+            <p>Ich freue mich auf dich.</p>
+            <p>Deine Esther</p>
+          </div>
+          <div class="spalte">
+            <p><img src="images/Esther.jpg" alt="EstherSelig" class=".logo"></p>
+          </div>
+        </div>
+      </section>
+      <section id="karte">
+        <center>
+          <h2>Standort</h2>
+        </center>
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=9.31,47.7606,9.3206,47.7626&amp;layer=mapnik&amp;marker=47.761439,9.316809"
+          style="border:1px solid #ccc;">
+        </iframe>
+        <br>
+        <a href="https://www.openstreetmap.org/?mlat=47.761439&amp;mlon=9.316809#map=17/47.761439/9.316809"
+          target="_blank">
+          Größere Karte anzeigen
+        </a>
+      </section>
+      </br>
+      <section id="impressum" class="impressum">
+        <b>Impressum</b>
+        <p> Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz) und § 18 MStV (Medienstaatsvertrag): <br>
+          Esther Selig<br>
+          Walter-Eberhard-Loch-Str. 10<br>
+          88682 Salem<br>
+          Telefon: 0155 60 590081<br>
+          Inhaberin: Esther Selig<br>
+          Termine immer nur nach Absprache<br>
+          Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
+          Esther Selig, Walter-Eberhard-Loch-Straße 10, 88682 Salem-Neufrach<br>
+        </p>
+        <b>Bildquellen</b><br>
+        <p>Alle auf dieser Internetseiten verwendeten Bildquellen sind urheberrechtlich geschützt und dürfen nicht ohne
+          Zustimmung oder Lizenzrecht anderweitig verwendet werden. Bildquelle extern : freepik<br /><br /></p>
+        </p>
+        <p>
+          <center>(c) 2025 - Fußzeit Bodensee - Esther Selig</center>
+        </p>
+      </section>
   </div>
 </body>
 
